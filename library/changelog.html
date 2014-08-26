@@ -1,0 +1,290 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Changelog for Kendo UI v2013.3.1316</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font: .75em/1.5 Tahoma, sans-serif;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            font-size: normal;
+        }
+
+        h2 {
+            font-size: 2em;
+            font-weight: normal;
+
+            margin: 1.2em 0 .3em;
+            padding-bottom: .2em;
+        }
+
+        #page {
+            width: 50em;
+            margin: 0 auto 2em;
+            border-radius: 0 0 1em 1em;
+            box-shadow: 0 0 10px #ccc;
+            padding: 1em 2em 2em;
+        }
+
+        .poBoxIcon {
+            float: left;
+            font-size: 2em;
+            margin: 1.2em .5em 0 0;
+        }
+
+        .poTopLine {
+            border-top: 2px solid #e1e1e1;
+            margin: 17px 0 40px 0;
+        }
+    </style>
+
+    <base href="http://www.kendoui.com/web/whats-new/release-notes/">
+</head>
+<body>
+    <div id="page">
+        <h1 class="title">Release notes for Kendo UI v2013.3.1316</h1>
+
+        <h1>Framework</h1>
+        <div class="tClear poTopLine">
+            <div class="poBoxIconText">
+                
+                <p><strong>What's fixed</strong></p><ul><li>JavaScript error when Visual Studio 2013 BrowserLink is enabled.</li><li>DOM elements are leaked by kendo.core.js</li></ul>
+            </div>
+        </div>
+
+
+        <div class="tClear poTopLine">
+            <h2>DataSource</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Multiple requests are executed if total number of records is changed after filtering if data virtualization with server operations are enabled</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>DatePicker</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>On iOS devices date cannot be deleted after selection, when widget is placed in iframe</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Draggable</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Blocking calls (alert/confirm) in dragend event handlers cause events to be triggered twice in FF and IE</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Globalization</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>kendo.toString formats numbers as negative zero</li><li>The short date format is not correct for the en-CA culture</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>MVVM</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Error is raised by widget source binding with server grouping and browser is IE7 or IE8</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Router</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Route callback does not get called when optional parameters are missing and there are query string parameters in the URL</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>SPA</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Route callback does not get called when optional parameters are missing and there are query string parameters in the URL</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Scheduler</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Event which start and ends at the DST date and the date is the next to the last day of the month view is not position correct</li></ul>
+        </div>
+        <h1>Web</h1>
+        <div class="tClear poTopLine">
+            <div class="poBoxIconText">
+                <p><strong>What's new</strong></p><ul><li>Generate TypeScript method overloads with correct parameter types</li></ul>
+                <p><strong>What's fixed</strong></p><ul><li>Element offset calculations are incorrect in IE/Win8 on touch devices when page is zoomed</li><li>CSS minification fails in ASP.NET MVC 4</li></ul>
+            </div>
+        </div>
+
+
+        <div class="tClear poTopLine">
+            <h2>AutoComplete</h2>
+            <p><strong>What's new</strong></p><ul><li>Style the popup element in order to honour the added header template</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>Prevent widget filtration on Alt key after an item selection</li><li>Header template cannot be initialized using MVVM</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Button</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>An error is thrown in IE 8 for not existing trim method</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Calendar</h2>
+            <p><strong>What's new</strong></p><ul><li>Dynamically change options of widget using setOptions method</li></ul>
+            
+        </div>
+        <div class="tClear poTopLine">
+            <h2>ColorPicker</h2>
+            <p><strong>What's new</strong></p><ul><li>Widget adapts to Windows high contrast mode</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>ColorPicker missing ARIA attributes</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>ComboBox</h2>
+            <p><strong>What's new</strong></p><ul><li>Style the popup element in order to honour the added header template</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>Widget selects the first item on initial load</li><li>Widget re-enters custom value on filter</li><li>Input element is automatically focused on Windows Phone 8</li><li>Widget does not persist user input when Enter is pressed fast after typing</li><li>Widget does not clear its selection when parent's value changes</li><li>Header template cannot be initialized using MVVM</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>DatePicker</h2>
+            <p><strong>What's new</strong></p><ul><li>Dynamically change options of widget using setOptions method</li><li>Use more appropriate ARIA 'combobox' role</li></ul>
+            
+        </div>
+        <div class="tClear poTopLine">
+            <h2>DateTimePicker</h2>
+            <p><strong>What's new</strong></p><ul><li>Dynamically change options of widget using setOptions method</li><li>Use more appropriate ARIA 'combobox' role</li></ul>
+            
+        </div>
+        <div class="tClear poTopLine">
+            <h2>DropDownList</h2>
+            <p><strong>What's new</strong></p><ul><li>Style the popup element in order to honour the added header template</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>Widget does not clear its selection when parent's value changes</li><li>Unbound widget throws exception when user tries to search an item</li><li>Header template cannot be initialized using MVVM</li><li>Widget throws exception when bound to a complex object with autoBind: false</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Editor</h2>
+            <p><strong>What's new</strong></p><ul><li>Extra line feeds generated in MS Word should be removed during paste</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>Formatting tool does not show correct format when multiple elements with the same format are selected</li><li>Pasted MS Word table breaks in IE8</li><li>List bullets do not align along with list items</li><li>Paste in inline (contentEditable) editor nested in lists breaks out of widget</li><li>Image alignment does not work with jQuery 2.x</li><li>Text cannot be typed in the editor in iOS if a touch* event handler is bound on the page</li><li>Script content is always encoded</li><li>Script tags are not encoded by the insertHtml command</li><li>Serialization does not trim whitespace in pages with jQuery 2.x</li><li>Link formatting is persisted when going to a new line in IE</li><li>Hitting enter at end of header goes to another header instead of a paragraph in IE</li><li>Formatting drop-down list throws errors when searching prior to selection</li><li>Focused element is not distinguishable on Windows high contrast theme</li><li>Cannot wrap image in link</li><li>Issue when pasting tags from MS Word</li><li>Empty table does not preserve rows height in IE 11</li><li>Tools are not usable in Windows high contrast mode</li><li>Pressing "Enter" multiple times insert only one new row in IE 11</li><li>In ordered list hitting enter after empty item does not ends the list as in MS-Word</li><li>Pasting tables from Word may have unexpected results when markup is invalid</li><li>Block formats break in pages that use jQuery 1.10</li><li>Scrollbar is reset when long paragraphs are formatted in Firefox</li><li>Unspecified error in IE when deleting the last column of a table</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Globalization</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>kendo.toString raises error when Globalize.js is used and the culture is not defined</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Grid</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Grid active filter style not visible in Metro theme</li><li>k-marquee z-index lower than Window's</li><li>FilterMenu is considered mobile even without specifying grid as mobile because inside of a mobile application.</li><li>Dirty mark is misplaced in RTL mode</li><li>Fix Grid popup editing</li><li>Mobile is missing from Grid default options</li><li>Dark adaptive Grid in iOS7 theme has wrong colors.</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>MVVM</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Header template cannot be initialized using MVVM</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Menu</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Last item removal deletes the Menu container</li><li>Menu opens on hover after using close method even if openOnClick is set to true</li><li>Arrow icons can't be set as sprites</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>MultiSelect</h2>
+            <p><strong>What's new</strong></p><ul><li>Style the popup element in order to honour the added header template</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>MVVM bound MultiSelect hangs in IE8 when delete an item</li><li>Horizontal scrollbar is shown when user types long text into widget</li><li>Widget does not allow text selection with a mouse</li><li>Header template cannot be initialized using MVVM</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>NumericTextBox</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Widget does not format correctly big integers if decimals option is set</li><li>Widget does not allow form post on Enter</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>PanelBar</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>PanelBar select method does not trigger the select event</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Scheduler</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Moving/Deleting occurrence with different timezone changes start time of the series</li><li>Incorrect resource is selected when creating a new event and resource data source is sorted</li><li>Widget deletes event on DELETE key when editing is disabled</li><li>Selected slot in month view throws exception in day view</li><li>Agenda view sometimes doesn't display events that end in the current date</li><li>Widget does not honour timezone option when parse recurrence rule</li><li>Widget does not expand correctly Monthly recurrence with a position option</li><li>Widget does not trigger change event in agenda view</li><li>SchedulerEvent.toOccurrence method creates an event which is reported as old</li><li>Creating an event with keyboard does not preset the required resources</li><li>Recurrence exceptions are not created in the DB when model Id is Guid</li><li>Custom views are not highlighted when are selected</li><li>Win 8.1 RT IE 11 issues with touch events</li><li>Error is raised when switching views if editing is disabled in adaptive mode</li><li>Widget does not expand correctly recurring events with 'monthly' frequency and interval '3'</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Splitter</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Pane index during pane adding / removing is not calculated correctly when multiple Splitters exist on the page</li><li>Splitter pane adding or removal requires manual resize(true)</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>TabStrip</h2>
+            <p><strong>What's new</strong></p><ul><li>There's no indication of loading until the page starts receiving data</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>Some TabStrip event handlers not removed upon destroy</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>TimePicker</h2>
+            <p><strong>What's new</strong></p><ul><li>Use more appropriate ARIA 'combobox' role</li></ul>
+            
+        </div>
+        <div class="tClear poTopLine">
+            <h2>TreeView</h2>
+            <p><strong>What's new</strong></p><ul><li>Make checked and expanded state initially available in the inferred DataSource</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>Reloading of nodes with deleted subnodes is not possible</li><li>Nodes cannot be appended with the append method after detaching a node</li><li>Loading / retry text cannot be localized</li><li>Memory leak when widget is instantiated from &lt;ul&gt; and root-level datasource is refreshed</li><li>Performance regression with large hierarchies, loadOnDemand: false and checkChildren: true</li><li>Inserting items in root-level of MVVM-bound TreeView throws JS error</li><li>Destroy method does not clean up event handlers and elements</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Window</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Allow Window content() method to set empty content</li><li>Window displays unnecessary paddings and scrollbars around iframes</li><li>Window ignores numeric top/left position configuration values</li><li>Using setOptions causes memory leaks</li><li>appendTo does not work when used with MVVM</li><li>Pinned Windows are not centered correctly</li><li>Action buttons are not displayed correctly in IE8</li></ul>
+        </div>
+        <h1>DataViz</h1>
+        <div class="tClear poTopLine">
+            <div class="poBoxIconText">
+                <p><strong>What's new</strong></p><ul><li>Generate TypeScript method overloads with correct parameter types</li></ul>
+                <p><strong>What's fixed</strong></p><ul><li>A div element is not cleaned up from DOM after rendering a DataViz widget</li></ul>
+            </div>
+        </div>
+
+
+        <div class="tClear poTopLine">
+            <h2>Chart</h2>
+            <p><strong>What's new</strong></p><ul><li>Add step, skip and color for the major/minor ticks for the axes.</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>Line chart with multiple series breaks the hover/tooltip</li><li>Custom aggregates overwrite the first data item (regression from internal builds)</li><li>Color binding overwrites line/area series color</li><li>errorBar color is overriden by series color (regression from internal builds)</li><li>Incorrect text is rendered for chart point notes (regression from internal builds)</li><li>Possible stack overflow when using dynamic (function) options (regression from internal builds)</li><li>Stock chart navigator disappears on resize. Regression from internal builds.</li><li>Error bars are not displayed for line and area charts (regression from internal builds)</li><li>An extra label can be rendered when the last category equals the end of the last period</li><li>Last category can become "stretched" for justified date axis with user set max</li><li>Setting roundToBaseUnit to false can produce a trailing date group</li><li>Shared tooltip is not enabled for series that don't have a name</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Map</h2>
+            <p><strong>What's new</strong></p><ul><li>Zoom controls added to Map</li><li>Add position option for map controls</li><li>New pannable configuration property</li><li>New zoomable configuration property</li><li>zoomStart event is now cancellable</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>Closed LineString / MultiLineString are not filled</li><li>Zoom events are not fired for pinch-to-zoom gestures</li><li>Circles do not have default style and radius</li><li>markerCreated is not fired</li><li>Coordinates returned from eventToView are invalid if the map is scrolled</li><li>Marker location is passed as array to tooltip template (instead of Location instance)</li><li>Marker defaults override marker options</li><li>Marker "location" property is incorrectly documented as "position"</li><li>Error can occur if shape layer is bound to local GeoJSON that contains Points (markers)</li><li>Disabling the attribution throws an error</li><li>Map center can't be set to Location instance</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Scheduler</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Win 8.1 RT IE 11 issues with touch events</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Sparkline</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Tooltip is not visible unless tooltip.shared is set to false</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>StockChart</h2>
+            <p><strong>What's new</strong></p><ul><li>Add step, skip and color for the major/minor ticks for the axes.</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>StockChart size is not updated on resize()</li></ul>
+        </div>
+        <h1>Mobile</h1>
+        <div class="tClear poTopLine">
+            <div class="poBoxIconText">
+                <p><strong>What's new</strong></p><ul><li>Generate TypeScript method overloads with correct parameter types</li></ul>
+                <p><strong>What's fixed</strong></p><ul><li>Changing event is missing the currentPage and nextPage properties.</li><li>application is resizing incorrectly in PhoneGap when keyboard is displayed</li><li>Mobile application repeats meta tags that are already included in the DOM.</li><li>pageSize option is not working</li><li>Badge method doesn't accept 0 as input value</li><li>CSS minification fails in ASP.NET MVC 4</li><li>page option of the widget does not work in data bound mode</li><li>ModalView width and height are always 100%</li></ul>
+            </div>
+        </div>
+
+
+        <div class="tClear poTopLine">
+            <h2>Drawer</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Unrecognized expression error is thrown when widget is opened</li><li>Drawer does not work with splitview</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Grid</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>FilterMenu is considered mobile even without specifying grid as mobile because inside of a mobile application.</li><li>Adaptive grid: Sort option not visible</li><li>Adaptive grid: Paging disappears after filter is cleared</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>ListView</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Pull to refresh gets stuck when user taps on the pull to refresh animation several times</li><li>Scrolling does not work after dragging on a fixed header</li><li>endless scrolling declaration does not work with MVVM declaration</li><li>endless scrolling, filterable and autobind=false result in javascript error</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>SplitView</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>SplitView's collapsible panes feature does not work in IE/WP 8 and Android stock browser</li><li>SplitView triggers error when enable method is called</li><li>Drawer does not work with splitview</li></ul>
+        </div>
+    </div>
+</body>
+</html>
